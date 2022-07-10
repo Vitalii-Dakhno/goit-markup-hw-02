@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./normalize.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,6 +13,8 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
@@ -20,21 +22,20 @@
       <nav>
         <a class="logo" href="">Web<span class="logo-second">Studio</span></a>
         <ul>
-          <li class="list-item"><a class="list" href="">Студия</a></li>
+          <li class="list-item"><a class="list-active" href="">Студия</a></li>
           <li class="list-item"><a class="list" href="./portfolio.html">Портфолио</a></li>
           <li class="list-item"><a class="list" href="">Контакты</a></li>
         </ul>
       </nav>
-      <div class="contacts">
-        <ul>
-          <li class="list-item">
-            <a class="contacts-items" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li class="list-item">
-            <a class="contacts-items" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </div>
+
+      <ul>
+        <li class="list-item">
+          <a class="contacts-items" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li class="list-item">
+          <a class="contacts-items" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+      </ul>
     </header>
 
     <main>
@@ -44,7 +45,7 @@
       </section>
 
       <section>
-        <h2>Особености</h2>
+        <h2 class="visually-hidden">Особености</h2>
         <ul class="list-item">
           <li>
             <h3 class="list-preference">Внимание к деталям</h3>
@@ -93,35 +94,35 @@
         </ul>
       </section>
 
-      <section>
+      <section class="team-bg">
         <h2 class="our-team">Наша команда</h2>
         <ul>
-          <li class="list-item">
-            <img src="./img/Product_Designer.jpg" alt="дизайнер-проекта" width="270" />
+          <li class="list-item card">
+            <img src="./img/product_designer.jpg" alt="дизайнер-проекта" width="270" />
 
             <h3 class="name-person">Игорь Демьяненко</h3>
 
             <p class="profesion">Product Designer</p>
           </li>
 
-          <li class="list-item">
-            <img src="./img/Frontend.jpg" alt="разработчик" width="270" />
+          <li class="list-item card">
+            <img src="./img/frontend.jpg" alt="разработчик" width="270" />
 
             <h3 class="name-person">Ольга Репина</h3>
 
             <p class="profesion">Frontend Developer</p>
           </li>
 
-          <li class="list-item">
-            <img src="./img/Marketing.jpg" alt="маркетолог" width="270" />
+          <li class="list-item card">
+            <img src="./img/marketing.jpg" alt="маркетолог" width="270" />
 
             <h3 class="name-person">Николай Тарасов</h3>
 
             <p class="profesion">Marketing</p>
           </li>
 
-          <li class="list-item">
-            <img src="./img/UI_Designer.jpg" alt="веб-дизайнер" width="270" />
+          <li class="list-item card">
+            <img src="./img/ui_designer.jpg" alt="веб-дизайнер" width="270" />
 
             <h3 class="name-person">Михаил Ермаков</h3>
 
